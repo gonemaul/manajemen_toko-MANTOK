@@ -1,3 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./components/sidebar.css";
+@import "./components/header.css";
+@import "./dashboard.css";
+@import './_fonts.css';
+
+@import './pages/_produk.css';
+
+root {
+    --text-primary: #00B7FF;
+    --bg-primary: #33A3FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+button {
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none !important;
+
+    &:hover {
+        text-decoration: none;
+        color: transparent;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

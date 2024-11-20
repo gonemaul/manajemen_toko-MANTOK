@@ -1,0 +1,25 @@
+body,
+html {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.p-dashboard {
+    display: flex;
+}
+
+.wrapper {
+    width: calc(100% - 236px);
+    background-color: #f9f9f9;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 10px 35px 25px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #f9f9f9;
+}

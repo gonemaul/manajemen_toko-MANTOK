@@ -1,0 +1,124 @@
+.box-luar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 236px;
+    background: #33A3FF;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    /* border-right: 1.5px solid #56565622; */
+    box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.1);
+
+    nav {
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-primary);
+
+        .top {
+            span {
+                display: block;
+            }
+
+            .text-lg {
+                font-size: 36px;
+                font-weight: bold;
+                font-family: 'dangrek';
+            }
+
+            .text-sm {
+                font-size: 20px;
+                font-family: 'aclonica';
+            }
+
+            text-align: center;
+            padding: 10px;
+            margin-top: 16px;
+            margin-bottom: 40px;
+        }
+
+        .link-wrapper {
+            position: relative;
+            margin: 15px 21px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            z-index: 3;
+            width: 194px;
+
+            .link {
+                padding: 13px 0px 13px 10px;
+                display: flex;
+                gap: 10px;
+                align-items: start;
+                transition: 0.3s;
+                border-radius: 8px;
+                width: 187px;
+
+                svg {
+                    &.icon-active {
+                        display: none;
+                    }
+
+                    &.icon-inactive {
+                        display: inline-block;
+                    }
+                }
+
+                &.logout {
+                    position: fixed;
+                    bottom: 13px;
+                    left: 10px;
+                    width: 210px;
+                    padding: 13px;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: #ffff;
+
+                    p {
+                        color: #00B7FF;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: #ffff;
+                    transition: 0.5s ease;
+
+                    p {
+                        color: #00B7FF;
+                        font-weight: 600;
+                    }
+
+
+                    svg {
+                        &.icon-active {
+                            display: inline-block;
+                        }
+
+                        &.icon-inactive {
+                            display: none;
+                        }
+                    }
+                }
+
+                p {
+                    margin: 0px;
+                    font-size: 20px;
+                    font-style: normal;
+                    /* font-weight: 600; */
+                    font-family: 'poppins';
+                    letter-spacing: 1px;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
