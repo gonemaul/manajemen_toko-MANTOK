@@ -1,0 +1,77 @@
+.dropdown {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .action-btn {
+        width: 30px;
+        height: 30px;
+        right: 20.73px;
+        top: 0px;
+        border-radius: 8.108px;
+        background: var(--gray-light, #efeded);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='3' viewBox='0 0 9 3' fill='none'%3E%3Cpath d='M1.28383 0.802002C0.676856 0.802002 0.180237 1.29862 0.180237 1.9056C0.180237 2.51258 0.676856 3.0092 1.28383 3.0092C1.89081 3.0092 2.38743 2.51258 2.38743 1.9056C2.38743 1.29862 1.89081 0.802002 1.28383 0.802002ZM7.90542 0.802002C7.29844 0.802002 6.80183 1.29862 6.80183 1.9056C6.80183 2.51258 7.29844 3.0092 7.90542 3.0092C8.5124 3.0092 9.00902 2.51258 9.00902 1.9056C9.00902 1.29862 8.5124 0.802002 7.90542 0.802002ZM4.59463 0.802002C3.98765 0.802002 3.49103 1.29862 3.49103 1.9056C3.49103 2.51258 3.98765 3.0092 4.59463 3.0092C5.20161 3.0092 5.69823 2.51258 5.69823 1.9056C5.69823 1.29862 5.20161 0.802002 4.59463 0.802002Z' fill='black'/%3E%3C/svg%3E");
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 8px;
+        border: 0.2px solid var(--Grey, #aeaeae);
+        background: var(--White, #fff);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+        min-width: 124px;
+        padding: 0;
+        display: none;
+        position: absolute;
+
+        .dropdown-item {
+            border-radius: 8px;
+            background: white;
+            padding: 10px 12px;
+            color: var(--Black, #000);
+            text-align: left;
+            font-family: Popins-regular;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: block;
+
+            &:hover {
+                font-weight: 500;
+            }
+
+            &:active {
+                font-weight: 500;
+            }
+        }
+
+        .dropdown-item-custom {
+            background: white;
+            padding: 10px 12px;
+            color: var(--Black, #000);
+            text-align: left;
+            // font-family: Lexend;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: 1px solid #aeaeae;
+            border-radius: 10px;
+
+            &:hover {
+                font-weight: 500;
+            }
+
+            &:active {
+                font-weight: 500;
+            }
+        }
+    }
+}

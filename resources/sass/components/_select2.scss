@@ -1,0 +1,65 @@
+// .select2-selection{
+//     border: none !important;
+//     background: transparent !important;
+//     color: var(--Grey, #AEAEAE) !important;
+//     font-feature-settings: 'dlig' on, 'liga' off, 'clig' off;
+//     font-size: 14px !important;
+//     font-style: normal;
+//     font-weight: 400 !important;
+//     line-height: normal;
+
+//     &__field{
+//         color: var(--Grey, #AEAEAE) !important;
+//         font-feature-settings: 'dlig' on, 'liga' off, 'clig' off;
+//         font-size: 14px !important;
+//         font-style: normal;
+//         font-weight: 400 !important;
+//         line-height: normal;
+//     }
+// }
+
+// .select2-selection--multiple{
+//     box-shadow: none !important;
+//     border: none !important;
+//     outline: none !important;
+// }
+
+// .select2-dropdown.select2-dropdown--below{
+//     border: none !important;
+// }
+
+// .select2-results{
+//     border: none !important;
+// }
+
+// .select2-results__options{
+//     border: 1px solid #AEAEAE !important;
+//     border-radius: 5px !important;
+// }
+
+// // .select2-search__field.select2-container--bootstrap .select2-selection--single .select2-selection__placeholder::before {
+// //     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='16' viewBox='0 0 15 16' fill='none'%3E%3Cpath d='M11.875 5.81274L7.5 10.1877L3.125 5.81274' stroke='%237B7878' stroke-width='0.9375' stroke-linecap='square'/%3E%3C/svg%3E"); /* Ganti dengan path ikon Anda */
+// //     position: absolute;
+// //     right: 10px;
+// //     width: 20px;
+// //     height: 20px;
+// // }
+
+// .select2-container--bootstrap-5 .select2-selection--single {
+//     position: relative;
+//     padding-right: 30px; /* Ruang untuk ikon panah */
+// }
+
+// .select2-container--bootstrap-5 .select2-selection--single .select2-selection__arrow {
+//     position: absolute;
+//     top: 50%;
+//     right: 10px;
+//     transform: translateY(-50%);
+//     pointer-events: none;
+//     content: '';
+//     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='16' viewBox='0 0 15 16' fill='none'%3E%3Cpath d='M11.875 5.81274L7.5 10.1877L3.125 5.81274' stroke='%237B7878' stroke-width='0.9375' stroke-linecap='square'/%3E%3C/svg%3E"); /* Ganti dengan path ikon panah Anda */
+//     background-repeat: no-repeat;
+//     background-size: 10px 10px; /* Ukuran ikon */
+//     width: 10px;
+//     height: 10px;
+// }

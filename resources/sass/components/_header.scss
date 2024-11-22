@@ -29,10 +29,13 @@
         align-items: center;
         gap: 7.317px;
         border-radius: 8.78px;
-        background: var(--Primary, #F6D047);
+        background: var(--Primary, #f6d047);
 
         /* Shadow/100 */
-        box-shadow: 0px 9px 123px 0px rgba(180, 177, 177, 0.15), 0px 2.01px 27.474px 0px rgba(180, 177, 177, 0.09), 0px 0.599px 8.18px 0px rgba(180, 177, 177, 0.06);
+        box-shadow:
+            0px 9px 123px 0px rgba(180, 177, 177, 0.15),
+            0px 2.01px 27.474px 0px rgba(180, 177, 177, 0.09),
+            0px 0.599px 8.18px 0px rgba(180, 177, 177, 0.06);
 
         img {
             display: flex;
@@ -50,7 +53,7 @@
         font-size: 24px;
         font-weight: 600;
         font-style: normal;
-        color: var(--text-primary, #00B7FF);
+        color: var(--text-primary, #00b7ff);
 
         span {
             font-weight: 500;

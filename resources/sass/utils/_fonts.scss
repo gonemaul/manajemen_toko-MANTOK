@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Aclonica";
+    src: url("/public/font/Aclonica/Aclonica-Regular.ttf") format("truetype");
+    font-weight: normal; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+@font-face {
+    font-family: "Dangrek";
+    src: url("/public/font/Dangrek/Dangrek-Regular.ttf") format("truetype");
+    font-weight: normal; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+@font-face {
+    font-family: "Outfit";
+    src: url("/public/font/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+@font-face {
+    font-family: "Poppins-medium";
+    src: url("/public/font/Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: medium; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+@font-face {
+    font-family: "Poppins-bold";
+    src: url("/public/font/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+@font-face {
+    font-family: "Poppins-regular";
+    src: url("/public/font/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal; // Berat font (misalnya normal, bold, dsb.)
+    font-style: normal; // Gaya font (misalnya normal, italic, dsb.)
+}
+$lexend: "lexend", sans-serif;

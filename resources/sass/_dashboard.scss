@@ -1,0 +1,300 @@
+@import "./utils/variables";
+body,
+html {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins-medium, sans-serif;
+}
+
+.p-dashboard {
+    display: flex;
+}
+
+.wrapper {
+    width: calc(100% - 236px);
+    background-color: #f9f9f9;
+    margin-left: 236px;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 15px 30px 25px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #f9f9f9;
+}
+
+.content-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 35px;
+    background-color: #f9f9f9;
+
+    .chart-container {
+        .bg-wrapper {
+            height: 100%;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Add shadow for depth */
+        }
+    }
+
+    .right-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+
+        .top-container,
+        .bottom-container {
+            flex: 1;
+            width: 100%;
+
+            .bg-wrapper {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                /* Add shadow for depth */
+            }
+
+            .top-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 15px;
+
+                // margin-bottom: 20px;
+                .text p {
+                    font-size: 16px;
+                    color: #7b7878;
+                }
+
+                &.wt-dash-border {
+                    border-bottom: 0.5px dashed var(--Secondary, #f8dc75);
+                }
+            }
+        }
+
+        .bottom-container {
+            height: 162px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+
+            &-inner {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bg-group-dash {
+    position: absolute;
+    top: -50px;
+    left: 1;
+    z-index: -1;
+}
+
+.bg-group-dash img {
+    width: 160px;
+}
+
+.bottom-info .left-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.bottom-info .left-text p {
+    font-size: 14px;
+    color: #7b7878;
+}
+
+.shipping-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.radius-yellow {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: radial-gradient(80.45% 80.45% at 50% 50%, #f6d047 0%, #f6d047 36.11%, #f8dc75 64.11%, #f8dc75 100%);
+}
+
+/* General Background Wrapper */
+.bg-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* Consistent shadow across all bg-wrappers */
+    &.g-25 {
+        gap: 25px;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .text {
+            margin-top: 5px;
+            margin-bottom: -6px;
+
+            p {
+                &.judul {
+                    color: var(--Dark-Grey, #666);
+                    font-family: Lexend;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .progress {
+        width: 100%;
+        /* Full width */
+        background-color: #f9f9f9;
+        /* Light grey background */
+        border-radius: 20px;
+        /* Rounded corners */
+        overflow: hidden;
+        /* Ensures the progress bar doesn't overflow */
+        height: 10px;
+        /* Set the height of the progress bar */
+    }
+
+    /* Progress bar itself */
+    .progress-bar {
+        height: 100%;
+        /* Fill the entire height */
+        background-color: $primary;
+        /* Green color */
+        width: 10%;
+        // width: 100%;
+        /* Start at 0 width */
+        transition: width 2s ease-in-out;
+
+        /* Smooth transition for animation */
+        &.oren {
+            background-color: $active;
+            border-radius: 4px;
+        }
+    }
+
+    .progress-bar.animate {
+        width: 75%;
+        /* The final width that we want */
+    }
+
+    .text-bot {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+
+            &.light {
+                color: var(--Grey, #aeaeae);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+    }
+}
+
+.chart-head {
+    color: var(--Black, #000);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .wrapper {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        flex-direction: column;
+
+        .dashboard-grid {
+            flex-direction: column;
+        }
+
+        .chart-container {
+            flex: none;
+        }
+
+        .right-container {
+            flex: none;
+        }
+    }
+}

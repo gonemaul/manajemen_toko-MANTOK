@@ -55,7 +55,7 @@
 
                 <p>Data Barang</p>
             </a>
-            <a href="{{ route('data_barang') }}" class="link {{ Route::is('belanja*') ? 'active' : '' }}">
+            <a href="{{ route('belanja') }}" class="link {{ Route::is('belanja*') ? 'active' : '' }}">
                 <svg class="icon-active" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -72,7 +72,7 @@
 
                 <p>Belanja</p>
             </a>
-            <a href="" class="link">
+            <a href="{{ route('rab') }}" class="link {{ Route::is('rab') ? 'active' : '' }}">
                 <svg class="icon-active" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path

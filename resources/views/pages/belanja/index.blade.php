@@ -1,49 +1,46 @@
 @extends('base.admin')
-@section('title', __('Data Barang'))
+@section('title', __('Belanja'))
 
 @section('content')
     <div class="p-dashboard">
         @include('components.sidebar')
         <div class="wrapper">
-            @include('components.header', ['title' => 'Data Barang'])
-            @include('pages.produk.modal.add')
+            @include('components.header', ['title' => 'Data Belanja'])
             <div class="content-wrapper">
                 <div class="card-tabel">
-                    @include('pages.produk.filter', [
-                        'classWF' => 'five-column',
+                    @include('pages.belanja.filter', [
+                        'classWF' => 'four-column',
                         'filterSelect' => [
-                            'text' => 'Stock',
-                        ],
-                        'filterSelect2' => [
                             'text' => 'Status',
                         ],
+                        'filterDate' => '',
                         'filterExport' => '',
-                        'filterBtnModal' => '',
                         'idSearch' => 'searchbarTableProduk',
                     ])
                     <div class="card-datatable page-card">
                         <table id="table-produk" class="table mb-0">
                             <thead>
                                 <tr>
-                                    <th class="text-center">Nama Produk</th>
-                                    <th class="text-center">Harga</th>
-                                    <th class="text-center">Pembelian</th>
-                                    <th class="text-center">Status Stock</th>
+                                    <th class="text-center">No Order</th>
+                                    <th class="text-center">Tanggal Order</th>
+                                    <th class="text-center">Tanggal Pengiriman</th>
+                                    <th class="text-center">Total Barang</th>
+                                    <th class="text-center">Total Belanja</th>
                                     <th class="text-center">Status</th>
                                     <th class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @for ($i = 0; $i < 7; $i++)
+                                @for ($i = 0; $i < 20; $i++)
                                     <tr>
-                                        <td class="text-center">Produk {{ $i }}</td>
-                                        <td class="text-center">Rp. 10.000</td>
-                                        <td class="text-center">12</td>
-                                        <td class="text-center">
-                                            <div class="status on-progress">Tidak Tersedia</div>
+                                        <td class="text-center">{{ $i + 1 }}FFB342</td>
+                                        <td class="text-center">20 November 2024</td>
+                                        <td class="text-center">27 November 2024</td>
+                                        <td class="text-center">100</td>
+                                        <td class="text-center">103
                                         </td>
                                         <td class="text-center">
-                                            <div class="status active">Aktif</div>
+                                            <div class="status active">Selesai</div>
                                         </td>
                                         <td>
                                             <div class="dropdown">
@@ -57,8 +54,6 @@
                                                     <a href="" id="action_change_status_produk" class="dropdown-item"
                                                         data-toggle="modal" data-target="">Ubah
                                                         Status</a>
-                                                    <a href="" id="action_change_status_produk" class="dropdown-item"
-                                                        data-toggle="modal" data-target="">Hapus</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -83,10 +78,10 @@
                 columnDefs: [{
                         targets: '_all',
                         defaultContent: '-',
-                        orderable: true
+                        // orderable: true
                     },
                     {
-                        targets: [4],
+                        targets: [6],
                         sortable: false
                     },
                 ],
@@ -101,23 +96,23 @@
                     },
                 },
                 "aaSorting": [],
-                //             "headerCallback": function(thead, data, start, end, display) {
-                //                 $(thead).find('th').each(function(index) {
-                //                     let th = $(this);
-                //                     th.find('svg').remove(); // Remove existing SVG if any
+                // "headerCallback": function(thead, data, start, end, display) {
+                //     $(thead).find('th').each(function(index) {
+                //         let th = $(this);
+                //         th.find('svg').remove(); // Remove existing SVG if any
 
-                //                     if (index !== 5) {
-                //                         th.append(`
-            // <svg class="ic-sort" xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17'
-            //     fill='none'>
-            //     <path
-            //         d='M4.66663 13.8334H5.99996V5.83341H7.99996L5.33329 3.16675L2.66663 5.83341H4.66663V13.8334ZM13.3333 11.1667H11.3333V3.16675H9.99996V11.1667H7.99996L10.6666 13.8334L13.3333 11.1667Z'
-            //         fill='black' />
-            // </svg>
-            // `);
-                //                     }
-                //                 });
-                //             }
+                //         if (index !== 6) {
+                //             th.append(`
+            //             <svg class="ic-sort" xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17'
+            //                 fill='none'>
+            //                 <path
+            //                     d='M4.66663 13.8334H5.99996V5.83341H7.99996L5.33329 3.16675L2.66663 5.83341H4.66663V13.8334ZM13.3333 11.1667H11.3333V3.16675H9.99996V11.1667H7.99996L10.6666 13.8334L13.3333 11.1667Z'
+            //                     fill='black' />
+            //             </svg>
+            //             `);
+                //         }
+                //     });
+                // }
             });
         })
     </script>

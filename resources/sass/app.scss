@@ -1,0 +1,24 @@
+@import "./base/base";
+@import "./utils/variables";
+@import "./utils/fonts";
+
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/datatables";
+@import "./components/chart";
+@import "./components/modal";
+@import "./components/input";
+@import "./components/card-tabel";
+@import "./components/filter";
+@import "./components/select2";
+@import "./components/dropdown";
+@import "./components/wrap-stas-card";
+@import "./components/nav-tab";
+@import "./components/swiper";
+@import "./components/button";
+
+// @import "./pages/login";
+@import "./pages/detail";
+@import "./dashboard";
+@import "./pages/produk";
+@import "./pages/rab";

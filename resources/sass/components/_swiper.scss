@@ -1,0 +1,43 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper{
+        width: 100% !important;
+    }
+    
+    .swiper-slide {
+        max-width: 100%; /* Membatasi lebar slide agar tidak lebih dari card */
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .swiper-pagination-bullet{
+        transform: scale(1.2);
+        &-active{
+            background: #F6D047 !important;
+        }
+    } 
+        
+
+    .wrapp-pag-nav{
+        display: flex;
+        height: 50px;
+
+        .swiper-button-next,
+        .swiper-button-prev{
+            margin-top: 230px;
+            &::after{
+                transform: scale(0.3);
+                border: 2px solid white;
+                color: white;
+                border-radius: 50px;
+                background: var(--Primary, #F6D047);
+                padding: 26px 40px;
+            }
+        }
+    }
+
+}
+
+/* Mengatur tampilan slide */

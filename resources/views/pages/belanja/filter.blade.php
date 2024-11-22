@@ -13,8 +13,9 @@
             <div class="select-wrapper-arrow">
                 <select class="" name="" id="statusProduk">
                     <option value="">{{ $filterSelect['text'] }}</option>
-                    <option value="ready">Tersedia</option>
-                    <option value="no-ready">Tidak Tersedia</option>
+                    <option value="done">Selesai </option>
+                    <option value="on-progress">On Progress </option>
+                    <option value="cancelled">Dibatalkan </option>
                 </select>
             </div>
         </div>
@@ -25,8 +26,8 @@
             <div class="select-wrapper-arrow">
                 <select class="" name="" id="selectCreator">
                     <option value="">{{ $filterSelect2['text'] }}</option>
-                    <option value="active">Aktif</option>
-                    <option value="inactive">Tidak Aktif</option>
+                    <option value="active">Active </option>
+                    <option value="inactive">Deactive </option>
                 </select>
             </div>
         </div>
@@ -52,8 +53,7 @@
     @if (isset($filterBtnModal))
         <div class="input-wrapper btn-add">
             <button class="button-add" data-toggle="modal" data-target="#AddProduct" id="button_add">
-                <img src="{{ asset('assets/svg/add.svg') }}" alt="">
-                Tambah Produk
+                + Tambah Produk
             </button>
         </div>
     @endif

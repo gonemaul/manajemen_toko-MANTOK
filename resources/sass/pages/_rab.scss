@@ -1,0 +1,258 @@
+.box {
+    // padding: 20px;
+
+    .row {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .col-md-2 {
+            // background: red;
+            width: calc((100vw / 12) * 0.5);
+        }
+
+        .col-md-5 {
+            max-width: calc((100vw / 12) * 5.5);
+            padding: 0 10px;
+        }
+    }
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 23px;
+        font-weight: 600;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .kiri {
+        height: 165px;
+        width: 100%;
+        // background: #010039;
+
+        label {
+            font-weight: 500;
+            margin-right: 8px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .top {
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                /* Lebar dropdown */
+            }
+
+            #dropdown-search {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%;
+                border-radius: 8px !important;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+            }
+
+            /* Styling dropdown content */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                width: 100%;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                max-height: 150px;
+                /* Atur tinggi maksimal jika banyak item */
+                overflow-y: auto;
+                /* Scroll jika item banyak */
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 10px 15px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            /* Show dropdown content when focused on search input */
+            .dropdown:focus-within .dropdown-content {
+                display: block;
+            }
+        }
+
+        .bottom {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 18px;
+
+            /* Styling untuk div yang membungkus setiap input dan label */
+            .input-group {
+                margin-bottom: 16px;
+            }
+
+            .input-group input {
+                width: 100%;
+                padding: 8px;
+                font-size: 16px;
+                border: 1px solid #ddd;
+                border-radius: 8px !important;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .kanan {
+        height: 165px;
+        width: 100%;
+        border: 2px dashed #01003958;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+
+            label {
+                font-size: 30px;
+                font-weight: 550;
+                margin-top: auto;
+            }
+
+            .total {
+                font-size: 50px;
+                font-weight: 600;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            padding-bottom: 10px;
+            font-family: "Poppins-medium";
+
+            .btn {
+                display: flex;
+                color: #ffff;
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                .icon-btn {
+                    margin-right: 3px;
+                    font-size: 110px;
+                }
+
+                &.buat_data {
+                    background: #0055c5;
+                }
+                &.tambah_data {
+                    background: #4caf50;
+                }
+                &.reset {
+                    background: #f44336;
+                }
+            }
+        }
+    }
+
+    .tabel {
+        width: 100%;
+        max-height: 100%;
+        margin-top: 20px;
+
+        /* Styling untuk tabel */
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            /* text-align: center; */
+            th,
+            td {
+                padding: 12px;
+                border: 1px solid #ddd;
+                font-family: "Poppins-regular";
+                &.text-center {
+                    text-align: center;
+                }
+            }
+
+            th {
+                text-align: center;
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            // td
+        }
+
+        .input-banyak {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 3px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        /* Styling tombol Action */
+        .btn-edit,
+        .btn-done,
+        .btn-delete {
+            padding: 6px 12px;
+            margin: 0 5px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            &:hover {
+                opacity: 0.8;
+            }
+            svg {
+                margin-right: 5px;
+            }
+        }
+
+        .done-icon {
+            display: none;
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-edit {
+            background-color: #0055c5;
+            color: white;
+        }
+
+        .btn-done {
+            background-color: #4caf50;
+            color: white;
+        }
+    }
+}

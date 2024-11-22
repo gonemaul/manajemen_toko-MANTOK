@@ -3,14 +3,13 @@
     top: 0;
     left: 0;
     bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 236px;
-    background: #33A3FF;
+    background: $primary;
     color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     z-index: 3;
     overflow: hidden;
     /* border-right: 1.5px solid #56565622; */
@@ -19,7 +18,6 @@
     nav {
         width: 100%;
         height: 100%;
-        background-color: var(--bg-primary);
 
         .top {
             span {
@@ -29,12 +27,12 @@
             .text-lg {
                 font-size: 36px;
                 font-weight: bold;
-                font-family: 'dangrek';
+                font-family: "dangrek";
             }
 
             .text-sm {
                 font-size: 20px;
-                font-family: 'aclonica';
+                font-family: "aclonica";
             }
 
             text-align: center;
@@ -83,7 +81,7 @@
                     background-color: #ffff;
 
                     p {
-                        color: #00B7FF;
+                        color: #00b7ff;
                     }
                 }
 
@@ -93,10 +91,9 @@
                     transition: 0.5s ease;
 
                     p {
-                        color: #00B7FF;
+                        color: #00b7ff;
                         font-weight: 600;
                     }
-
 
                     svg {
                         &.icon-active {
@@ -114,7 +111,7 @@
                     font-size: 20px;
                     font-style: normal;
                     /* font-weight: 600; */
-                    font-family: 'poppins';
+                    font-family: "poppins";
                     letter-spacing: 1px;
                     color: #ffff;
                 }
